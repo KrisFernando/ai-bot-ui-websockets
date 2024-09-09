@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Chat Bot</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <section class="msger">
+    <div class="row gx-0 fh">
+      <div class="col col-6 fh border-end">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-comment-alt"></i> AI Chat
+          </div>
+        </header>
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div class="msg-img">
+              <i class="fas fa-robot"></i>
+            </div>
+
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">AI BOT</div>
+              </div>
+
+              <div class="msg-text">
+                Hi, welcome to AI Chat! Please proceed and ask your questions.
+              </div>
+            </div>
+          </div>
+        </main>
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Ask your question here...">
+          <button type="submit" class="msger-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <div class="col col-6 fh">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-table"></i> Data Preview
+          </div>
+        </header>
+        <div class="container data-view">
+          <table id="preview" class="table data-table table-striped">
+            <thead id="tbheader" class="sticky-top" style="background-color: #fff;">
+            </thead>
+            <tbody id="tbbody">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jszip.js"></script>
+  <script src="js/xlsx.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
